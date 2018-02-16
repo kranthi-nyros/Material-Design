@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!--MDL--> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--MDL--> 
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+   </head>
+   <body>
+      <div id="mdl-layout-main" >
+      <div class="container">
+      <div style="margin-top:20px;margin-bottom:10px;text-align:center;" >
+         <img src="assets/images/logo.png" style="width: 100px;margin-bottom:15px" class="log">
+         <h3 style="margin-top:-15px;">MagnApuila</h3>
+      </div>
+      <nav>
+         <div class="nav-fostrap" style="z-index: 1; background-color: #c62828;">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li>
+                  <a href="javascript:void(0)">ABOUT US<span class="arrow-down"></span></a>
+                  <ul class="dropdown">
+                     <li><a href="">ABOUT US</a></li>
+                     <li><a href="">PAGES </a></li>
+                     <li><a href="">BLOG</a></li>
+                     <li><a href="">GALLERY</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="javascript:void(0)" >PAGES<span class="arrow-down"></span></a>
+                  <ul class="dropdown">
+                     <li><a href="">FAQS</a></li>
+                     <li><a href="">OUR TEAM</a></li>
+                     <li><a href="">HISTORY</a></li>
+                     <li><a href="">TESTIMONIALS</a></li>
+                     <li><a href="">PORTFOLIO</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="javascript:void(0)" >BLOG<span class="arrow-down"></span></a>
+                  <ul class="dropdown">
+                     <li><a href="">Tools</a></li>
+                     <li><a href="">Backlink</a></li>
+                  </ul>
+               </li>
+               <li><a href="">GALLERY</a></li>
+               <li><a href="">Advertising</a></li>
+               <li><a href="">Business</a></li>
+               <label class="mdl-button mdl-js-button mdl-button--icon"
+                  for="waterfall-exp">
+               <i class="material-icons" style="color: white;">search</i>
+               </label>
+               <div class="mdl-textfield__expandable-holder">
+                  <input class="mdl-textfield__input" type="text" name="sample" placeholder=" Search..." 
+                     id="waterfall-exp"  style="width: 300px!important; color: white; margin-left: -20px;
+                     background-color: #b92020; border: none;">
+
+               </div>
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float:right;" class="login-button">Login</button>
+               <div id="id01" class="modal">
+                  <form class="modal-content animate" action="/action_page.php">
+                     <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="assets/images/login.png" alt="Avatar" class="avatar">
+                     </div>
+                     <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="login-button">Login</button>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                     </div>
+                     <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                     </div>
+                  </form>
+
+               </div>
+              
+            </ul>
+
+         </div>
+         <div class="nav-bg-fostrap" style="z-index: 1;">
+            <div class="navbar-fostrap"> <span></span> <span></span> <span></span> </div>
+            <a href="" class="title-mobile"></a>
+         </div>
+         <!--slider-->
+         <div>
+            <div class="container">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; ">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="assets/images/steakFrites2-1200x400.jpg" alt="Los Angeles" style="width:100%; ">
+                        <div class="carousel-caption">
+                           <h3>Food Delovery is Easy</h3>
+                           <p>Enjoy your food prepare by professional</p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="assets/images/bred.jpg" alt="Chicago" style="width:100%; ">
+                        <div class="carousel-caption">
+                           <h3>Food Delovery is Easy</h3>
+                           <p>Enjoy your food prepare by professional</p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="assets/images/ice.jpg" alt="New York" style="width:100%;">
+                        <div class="carousel-caption">
+                           <h3>Food Delovery is Easy</h3>
+                           <p>Enjoy your food prepare by professional</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+            <!--slider end-->
+      </nav>
+      <div class='content'>
+      <div class="container-fluid custom-container">
+      <h3 style="text-align: center;"> The Process </h3>
+      <div class="container">
+      <div class="row">
+      <!-- Boxes de Acoes -->
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">                   
+      <div class="icon">
+      <div class="image"><span class="glyphicon glyphicon-earphone"></span></i></div>
+      <div class="info">
+      <h3 class="title">Contact Us</h3>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+      </p>
+      <div class="more">
+      <a href="#" title="Title Link">
+      Read More <i class="fa fa-angle-double-right"></i>
+      </a>
+      </div>
+      </div>
+      </div>
+      <div class="space"></div>
+      </div> 
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">                   
+      <div class="icon">
+      <div class="image"><span class="glyphicon glyphicon-list-alt"></span></div>
+      <div class="info">
+      <h3 class="title">Event Details</h3>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+      </p>
+      <div class="more">
+      <a href="#" title="Title Link">
+      Read More <i class="fa fa-angle-double-right"></i>
+      </a>
+      </div>
+      </div>
+      </div>
+      <div class="space"></div>
+      </div> 
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">                   
+      <div class="icon">
+      <div class="image"><span class="glyphicon glyphicon-send"></span></div>
+      <div class="info">
+      <h3 class="title">Delivery</h3>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+      </p>
+      <div class="more">
+      <a href="#" title="Title Link">
+      Read More <i class="fa fa-angle-double-right"></i>
+      </a>
+      </div>
+      </div>
+      </div>
+      <div class="space"></div>
+      </div> 
+      </div>          
+      <!-- /Boxes de Acoes -->
+      </div>
+      </div>
+      <!--  Category -->
+      <h3 style="text-align: center;">Choose Your Category</h3>
+      <div class="row" style="text-align: center;">
+      <div class="col-12 features">
+      <div class="cl-md-6" style="margin-right: 20px;"> 
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category2.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">WEDDINGS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content. </p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>     
+      <div class= "cl-md-6" style="margin-right: 20px;">
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category3.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">PRIVATE FUNCTIONS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content. </p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>
+      <div class= "cl-md-6">
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category1.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">CORPORATES EVENTS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content.</p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="row" style="text-align: center; margin-top:30px;">
+      <div class="col-12 features" style="display: block;">
+      <div class="cl-md-6" style="margin-right: 20px;"> 
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category2.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">WEDDINGS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content. </p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"  style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>     
+      <div class= "cl-md-6" style="margin-right: 20px;">
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category3.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">PRIVATE FUNCTIONS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content. </p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>
+      <div class= "cl-md-6">
+      <div class="custom-card card w-50">
+      <div class="card-block">
+      <img src="assets/images/category1.jpg" 
+         style="width:300px; height: 200px;
+         margin-top: 10px; margin-left:10px; margin-right: 10px;">
+      <h3 class="card-title">CORPORATES EVENTS</h3>
+      <p class="card-text">
+      With supporting text below as a natural <br> lead-in to additional content.</p>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #c62828!important">
+      Click
+      </button>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!--Why Choose Us-->
+      <div class="container">
+      <div class="cl-md-12 choose" style="display: inline-flex;">
+      <div class="cl-md-5">
+      <img src="assets/images/chef.png">
+      </div>
+      <div class="col-md-3" 
+         style="margin-top: 100px; 
+         display: inline-block; max-width:150px;">
+      <div class="cl-md-1 security">
+      <i class="material-icons security">verified_user</i>
+      </div>
+      <div class="cl-sm-1 security">
+      <i class="material-icons security">local_shipping</i>
+      </div>
+      <div class="cl-sm-1 security">
+      <i class="material-icons security">security</i>
+      </div>
+      </div>
+      <div class="cl-md-6" class="smalls" style="width: 500px">
+      <h3 class="choose-heading"><b>Why Choose Us</b></h3>
+      <img src="assets/images/divider.png" 
+         style="width:200px; 
+         margin-top:-50px; margin-left: -100px;">
+      <div class="col-sm-2" style="margin-top: -5px;">
+      <h4>
+      <b>100% Fresh Organic Foods</b>
+      </h4>
+      <p>This is our motto and we are experts in delivering the <br> best 100% organic foods on the market. We work with more than 60 farms all over the country.</p>
+      </div>
+      <div class="col-sm-2">
+      <h4><b>Fast Free Delivery</b></h4>
+      <p>We have developed an effective and fast delivery network which brings the products to your home or office in 48 hours.</p>
+      </div>
+      <div class="col-sm-2">
+      <h4><b>Rich Experience</b></h4>
+      <p>We are working with organic products for 14 years and to be honest this is the best job ever – to see the people’s smiles when they taste our fresh food!</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!--What People Say-->
+      <section class="container" style="width: 1200px;">
+      <div class="page-header">
+      <h3>What People Say<br></h3>
+      </div>
+      <div class="row active-with-click">
+      <!--Review one-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Red">
+      <h2>
+      <span>Christopher Walken</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-one.jpg">
+      </div>
+      <div class="mc-description">
+      I have been always looking for a reliable organic food supplier due to my restaurant’s constant need in high-quality vegetables and fruits. I am really glad I discovered your farm! It’s great that your farm’s products are incredible tasty, full of useful vitamins and minerals and free of pesticides and nitrates.
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"> </a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>
+      <!--Review two-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Pink">
+      <h2>
+      <span>Sean Penn</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-two.jpg">
+      </div>
+      <div class="mc-description">
+      I’ve been using Organic Farm delivery service for a few weeks &amp; I’d like to recommend them for their excellent reliable service and the quality of their produce. Since starting to use this service  I get better quality food that’s organised in such a small amount of time I used to spend.
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>
+      <!--Review three-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Purple">
+      <h2>
+      <span>Clint Eastwood</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-three.jpg">
+      </div>
+      <div class="mc-description">
+      I just don't know how to describe your services... They are extraordinary! I am quite happy with them! .
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>
+      <!--Review foure-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Deep-Purple">
+      <h2>
+      <span>Dustin Hoffman</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-foure.jpg">
+      </div>
+      <div class="mc-description">
+      As a person who has a healthy lifestyle, I’m very concerned about what I eat and drink every day. Your farm is one of a few organic food providers in our area which I fully trust. I appreciate what you do because it’s hard to find a company so dedicated to the health of their customers these days.
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>
+      <!--Review five-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Indigo">
+      <h2>
+      <span>Edward Norton</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-five.jpg">
+      </div>
+      <div class="mc-description">
+      As a person who has a healthy lifestyle, I’m very concerned about what I eat and drink every day. Your farm is one of a few organic food providers in our area which I fully trust. I appreciate what you do because it’s hard to find a company so dedicated to the health of their customers these days.
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>
+      <!--Review sixe-->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+      <article class="material-card Blue">
+      <h2>
+      <span>Michael Caine</span>
+      <strong>
+      <i class="fa fa-fw fa-star"></i>
+      Customer
+      </strong>
+      </h2>
+      <div class="mc-content">
+      <div class="img-container">
+      <img class="img-responsive" src="assets/images/customer-sixe.jpg">
+      </div>
+      <div class="mc-description">
+      As a person who has a healthy lifestyle, I’m very concerned about what I eat and drink every day. Your farm is one of a few organic food providers in our area which I fully trust. I appreciate what you do because it’s hard to find a company so dedicated to the health of their customers these days.
+      </div>
+      </div>
+      <a class="mc-btn-action">
+      <i class="material-icons fa fa-bars" style="margin-top: 10px;">
+      </i>
+      </a>
+      <div class="mc-footer">
+      <h4>
+      Rating
+      </h4>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      <a class="fa fa-fw fa-star"></a>
+      </div>
+      </article>
+      </div>      
+      </div>
+      </div>
+      </section>
+      <div class="container" style="margin-top: 20px;">
+      <h3>Our Happy Clients</h3>
+      <div class="cl-md-12" 
+         style="display: inline-flex!important; margin-bottom:100px;
+         margin-top:50px;">
+      <div class="cl-md-3" style="margin-right: 30px;">
+      <img class="img-responsive" src="assets/images/company-one.jpg">
+      </div>
+      <div class="cl-md-3" style="margin-right: 30px;">
+      <img class="img-responsive" src="assets/images/company-two.jpg">
+      </div>
+      <div class="cl-md-3" style="margin-right: 30px;">
+      <img class="img-responsive" src="assets/images/company-three.jpg">
+      </div>
+      <div class="cl-md-3" style="margin-right: 10px;">
+      <img class="img-responsive" src="assets/images/company-foure.jpg">
+      </div>
+      </div>
+      </div>
+      <!--Footer-->
+      <div class="row footer">
+      <div class="cl-md-12 " style="display:inline-flex; ">
+      <div style="padding-top:50px!important; margin-right: 5cm;"
+         class="adrees" >
+      <p>Food Street 101, NY 10036, US</p>
+      <p style="margin-top: -10px;margin-left: -50px;"> example@demolink.org</p>
+      </div>
+      <div style="padding-top:50px!important;margin-right: 5cm;" >
+      <input type="" name="" placeholder="  Enter Your Email" class="subscribe">
+      </input>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent SUBCRIBEBUTTON">
+      SUBCRIBE
+      </button>
+      </div>
+      <div style="padding-top:50px!important;" class="adrees">
+      <p>Call Us: 1-800-123-1234</p>
+      <p style="margin-left: 50px; margin-top: -10px;">2-800-123-1234</p>
+      </div>
+      </div>
+      </div>
+      <!-- social media -->
+      <div class="row footer2">
+      <div class="cl-md-12" style="display: inline-flex;"> 
+      <div class="cl-md-6" style="margin-top: 40px; margin-right: 300px; color:#58657a">
+      <p>© 2018 All Rights Reserved Privacy Policy</p>
+      </div>
+      <div class="cl-md-6" style="margin-left:  350px; ">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored social-1 facebook">
+      <a href="#" class="fa fa-facebook"></a>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored social-1 twitter">
+      <a href="#" class="fa fa-twitter"></a>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored social-1 google">
+      <a href="#" class="fa fa-fw fa-google-plus"></a>
+      </button>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="login.js"></script>
+</html>
